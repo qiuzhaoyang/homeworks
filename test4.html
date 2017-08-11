@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .container {
+            width: 800px;
+            margin: 0 auto;
+        }
+
+        .header {
+            background-color: white;
+            margin: 0;
+            padding: 0;
+        }
+
+        .header:after {
+            content: '';
+            display: block;
+            clear: both;
+        }
+
+        .header img {
+            width: 40px;
+            border-radius: 50%;
+            float: left;
+        }
+
+        .header span {
+            color: #000;
+            margin-left: 8px;
+            padding: 12px 0px;
+            float: left;
+        }
+
+        .time {
+            opacity: 0.4;
+        }
+
+        .aside img {
+            width: 250px;
+            border-radius: 15px;
+            float: right;
+            margin: 20px;
+        }
+
+        .main p {
+            line-height: 1.5;
+            display: -webkit-box;
+            -webkit-line-clamp: 5;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .footer {
+            background-color: white;
+        }
+
+        .footer:after {
+            content: '';
+            display: block;
+            clear: both;
+        }
+
+        .footer a {
+            float: left;
+            text-decoration: none;
+            color: red;
+            border: 1px solid red;
+            border-radius: 2px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="image/1bb.jpg" alt="">
+            <span class="author">Tripper</span>
+            <span class="time">昨天 22:48</span>
+        </div>
+        <div class="aside">
+            <img src="image/DSC_0200.JPG" alt="">
+        </div>
+        <div class="main">
+            <h3>黄山奇石景观之猴子观海</h3>
+            <p>猴子观海，当地居民习惯称为猴子望太平，是黄山的一处奇石景观。
+                猴子观海位于黄山风景区北海景区黄山狮子峰前，一石猴独踞峰顶，仿佛极目远望，又似纵身跳跃静观云海。
+                云雾缭绕之中，山脚的太平县城时隐时现，这奇幻之景被猴子尽收眼底。风云变幻、光影交错，曼妙玄幻的太平夜景蔚为壮观。
+                千百年来相依相伴，猴子眼中的太平县也几经变换，唯一不变的是灵猴对太平的守望和当地居民“天下太平”的美好愿景。
+            </p>
+        </div>
+        <div class="footer">
+            <a href="#">谈写作</a>
+        </div>
+        
+    </div>
+</body>
+</html>
