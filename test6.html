@@ -3,48 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-        }
-
-        .box {
-            width: 100%;
-            height: 100%;
-        }
-
-        .box > div {
-            float: right;
-        }
-
-        .box:after {
-            content: '';
-            display: block;
+        #content:after {
+          content: '';
+          display: block;
             clear: both;
         }
 
-        .box1 {
+        .aside {
             width: 200px;
-            height: 100%;
-            background-color: green;
+            height: 500px;
+            background-color: yellow;
+            float: right;
         }
 
-        .box2 {
-            width: calc(100%-200px);
-            height: 100%;
-            background-color: blue;
+        .main {
+            margin-right: 200px;
+            height: 400px;
+            background-color: red;
+        }
+
+        #footer {
+            background-color: #cccccc;
         }
     </style>
 
 </head>
 <body>
-    <div class="box">
-        <div class="box1">
-            <p>right</p>
-        </div>
-        <div class="box2">
-            <p>left</p>
-        </div>
+    <div id="content">
+        <div class="aside">aside</div>
+        <div class="main">content</div>
     </div>
+    <div id="footer">footer</div>
 </body>
 </html>
