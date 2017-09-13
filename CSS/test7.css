@@ -1,0 +1,296 @@
+/* reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+}
+ul {
+    list-style: none;
+}
+
+/* common css */
+.clearfix::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+.button {
+    display: inline-block;
+    color: #fff;
+    text-transform: uppercase;
+    background-color: #fed136;
+    font-size: 18px;
+    padding: 25px 50px;
+    border-radius: 4px;
+    opacity: 0.8;
+}
+.button:hover {
+    opacity: 1;
+}
+body {
+    font: 14px/1.5 Arial;
+    background-color: #fff;
+    color: #000;
+}
+.layout {
+    width: 1200px;
+    margin: 150px auto 0 auto;
+}
+}
+/* css */
+html,body {
+    height: 100%;
+}
+header {
+    position: relative;
+    height: 100%;
+    min-height: 800px;
+    background-image: url(https://yym-yumeng123.github.io/Project/Single_page/images/header-bg.jpg);
+    background-size: cover;
+}
+header .logo {
+    color: rgb(145, 122, 47);
+    font-size: 32px;
+    text-transform: capitalize;
+    margin-top: 10px;
+    margin-left: 20px;
+    float: left;
+}
+header .nav {
+    float: right;
+}
+header ul {
+    margin-right: 200px;
+}
+header .nav > li {
+    float: left;
+}
+header .nav a {
+    display: block;
+    padding: 5px;
+    margin: 10px;
+    border-radius: 4px;
+    text-transform: uppercase;
+    color: #7a7a7b;
+    font-size: 16px;
+}
+header .nav a:hover {
+    background: #fed136;
+}
+header .intro {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: #fff;
+    text-align: center;
+}
+header .intro p {
+    font-size: 40px;
+    text-transform: capitalize;
+    font-style: italic;
+}
+header .intro h1 {
+    width: 900px;
+    font-size: 60px;
+    text-transform: uppercase;
+}
+header .intro .button {
+    margin-top: 30px;
+}
+section {
+    margin-top: 140px;
+    text-align: center;
+}
+section > h2 {
+    font-size: 40px;
+    text-transform: uppercase;
+    color: #333333;
+}
+section > p {
+    margin-bottom: 50px;
+    font-size: 16px;
+    font-style: italic;
+    color: #777777;
+}
+section > ul .iconfont {
+    padding: 20px;
+    font-size: 40px;
+    color: #ffffff;
+    background-color: #fed136;
+    border-radius: 50%;
+}
+section .family-intro > li {
+    float: left;
+    width: 33.33%;
+    padding: 10px 20px;
+}
+section > ul h3 {
+    margin-top: 20px;
+    color: #333333;
+}
+section > ul p {
+    margin-top: 10px;
+    color: #777777;
+}
+
+section .family figure {
+    width: 30.33%;
+    margin: 1.5%;
+    float: left;
+    box-shadow: 0px 2px 4px 2px rgba(0, 0, 0, 0.3);
+}
+section .family figure:nth-child(3n) {
+    margin-right: 0;
+}
+section .family a {
+    display: block;
+}
+section .family img {
+    width: 100%;
+    height: 100%;
+}
+
+section .family figcaption {
+    font-size: 18px;
+    font-weight: bold;
+}
+section .family figure p {
+    font-size: 17px;
+    color: #777777;
+    font-style: italic;
+}
+section .timeline img {
+    width: 100px;
+    height: 100px;
+    border: 3px solid lightblue;
+    border-radius: 50%;
+}
+section .timeline dt {
+    font-size: 18px;
+    font-weight: bold;
+}
+section .timeline dd:nth-child(2) {
+    font-size: 16px;
+    font-weight: bold;
+}
+section .timeline dd:nth-child(3) {
+    color: #777777;
+}
+section .timeline > li {
+    position: relative;
+}
+section .timeline > li:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+section .timeline > li:nth-child(odd) {
+    margin-top: 60px;
+    padding-right: calc(50% - 50px);
+    text-align: right;
+}
+section .timeline > li:nth-child(odd) img {
+    float: right;
+}
+section .timeline > li:nth-child(odd) dl {
+    margin-right: 120px;
+}
+section .timeline > li:nth-child(even) {
+    margin-top: 60px;
+    padding-left: calc(50% - 50px);
+    text-align: left;
+}
+section .timeline > li:nth-child(even) img {
+    float: left;
+}
+section .timeline > li:nth-child(even) dl {
+    margin-left: 120px;
+}
+section .timeline > li::before {
+    content: '';
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    margin-left: -1px;
+    display: inline-block;
+    height: 77px;
+    width: 2px;
+    background-color: lightblue;
+}
+section .timeline > li:last-child::before {
+    height:0;
+}
+section .team > li {
+    float: left;
+    width: 33.33%;
+}
+
+section .team img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+
+
+
+
+main section:last-child {
+    position: relative;
+    min-height: 800px;
+    background-image: url("https://yym-yumeng123.github.io/Project/Single_page/images/header-bg.jpg");
+    background-size: cover;
+}
+section  .map {
+    width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+section .map .table {
+    width: 50%;
+    position: absolute;
+    top: 200px;
+    right: 50%;
+}
+section .table div {
+    margin: 25px;
+}
+section .table div > input {
+    display: table-cell;
+    width: 500px;
+    height: 50px;
+    font-size: 16px;
+    border-radius: 4px;
+}
+section .table4 {
+    width: 50%;
+    position: absolute;
+    top: 225px;
+    left: 50%;
+}
+section .table4 .message {
+    display: inline-block;
+    width: 500px;
+    height: 200px;
+    font-size: 16px;
+    border-radius: 4px;
+}
+main section:last-child a {
+    position: absolute;
+    top: 650px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+
+
+
+
+
+
+
